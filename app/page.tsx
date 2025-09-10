@@ -14,7 +14,7 @@ async function getBlogPosts(): Promise<Props[]> {
     endpoint: 'blog', // 'blog'はmicroCMSのエンドポイント名
     queries: {
       fields: 'id,title',  // idとtitleを取得
-      limit: 5,  // 最新の5件を取得
+      limit: 10,  // 最新の5件を取得
     },
   });
   return data.contents;
