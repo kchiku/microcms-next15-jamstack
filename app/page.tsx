@@ -1,6 +1,7 @@
 // app/page.tsx
 import Link from 'next/link';
 import { client } from '../libs/microcms';
+import styles from './top.module.css';
 
 // ブログ記事の型定義
 type Props = {
@@ -24,9 +25,9 @@ export default async function Home() {
   const posts = await getBlogPosts();
 
   return (
-    <main>
-      <h1>ブログ記事一覧</h1>
-      <ul>
+    <main className={styles.main}>
+      <h1 className={styles.title}>ブログ記事一覧!!</h1>
+      <ul className={styles.list}>
         {posts.map((post) => (
           <li key={post.id}>
             <Link href={`/blog/${post.id}`}> {/* 記事へのリンクを生成 */}

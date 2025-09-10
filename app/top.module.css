@@ -1,0 +1,19 @@
+.main{
+  padding: 40px;
+}
+
+.title{
+  color: #000;
+  background-color: #ccc;
+}
+
+.list{
+  margin-top: 20px;
+  margin-left: 1em;
+}
+.list li{
+  margin: 10px 0;
+}
+.list li a{
+  text-decoration: underline;
+}
